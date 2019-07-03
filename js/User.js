@@ -20,3 +20,4 @@ class User{
        machine.play(money);
     }
 }
+export default User;

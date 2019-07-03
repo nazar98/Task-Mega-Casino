@@ -1,3 +1,4 @@
+import User from './User';
 class SuperAdmin extends User{
    
     constructor(name, money){
@@ -28,7 +29,7 @@ class SuperAdmin extends User{
         }
     }
 
-    getMoney(nameCasino, number) {
+    getMoneyFromCasino(nameCasino, number) {
         for(var casino of this.listCasinos)
         {
             if(casino.name == nameCasino)
@@ -87,11 +88,6 @@ class SuperAdmin extends User{
         for (let machine of casino.gameMachines) {
             machine.setMoney(moneyToMachine)
         }
-    }
-
-    play(money)
-    {
-        super.play(money);
     }
     
     getCasinoByName(name)
